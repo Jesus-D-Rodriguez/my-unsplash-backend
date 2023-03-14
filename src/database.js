@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://127.0.0.1:27017/myunsplash', {
+const url = "mongodb+srv://my-unsplash-user:my-unsplash@my-unsplash.2gkamyo.mongodb.net/my-unsplash?retryWrites=true&w=majority";
+
+const url2 = 'mongodb://127.0.0.1:27017/myunsplash';
+
+mongoose.connect(url, {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 })
